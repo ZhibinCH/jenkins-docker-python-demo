@@ -2,10 +2,10 @@ node {
     stage('Cleanup') {
         step([$class: 'WsCleanup'])
     }
-    /*stage('Checkout SCM') {
+    stage('Checkout SCM') {
         checkout scm
     }
-    def pythonImage
+    /*def pythonImage
     stage('build docker image') {
         pythonImage = docker.build("maxsum:build")
     }

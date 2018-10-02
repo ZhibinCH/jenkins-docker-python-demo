@@ -20,5 +20,5 @@ class MaxSum:
 
     def run(self):
         if (self.accumulate):
-            return f"The sum is: {self.sum()}"
-        return f"The max is: {self.max()}"
+            return ("The sum is: "+ str(self.sum()))
+        return ("The max is: "+str(self.max()))

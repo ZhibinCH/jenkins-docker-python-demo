@@ -5,8 +5,8 @@ node {
     stage('Checkout SCM') {
         checkout scm
     }
-    /*def pythonImage
-    stage('build docker image') {
+    def pythonImage
+    /*stage('build docker image') {
         pythonImage = docker.build("maxsum:build")
     }
     stage('test') {

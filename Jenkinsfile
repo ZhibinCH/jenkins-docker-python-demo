@@ -14,7 +14,7 @@ node {
             sh '. /tmp/venv/bin/activate && python -m pytest --junitxml=build/results.xml'
         }
     }
-    /*stage('collect test results') {
+    stage('collect test results') {
         junit 'build/results.xml'
-    }*/
+    }
 }

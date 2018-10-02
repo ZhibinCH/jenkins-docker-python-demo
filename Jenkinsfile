@@ -2,7 +2,7 @@ node {
     stage('Cleanup') {
         step([$class: 'WsCleanup'])
     }
-    stage('Checkout SCM') {
+    /*stage('Checkout SCM') {
         checkout scm
     }
     def pythonImage
@@ -16,5 +16,5 @@ node {
     }
     stage('collect test results') {
         junit 'build/results.xml'
-    }
+    }*/
 }

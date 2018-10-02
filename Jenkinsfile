@@ -6,10 +6,10 @@ node {
         checkout scm
     }
     def pythonImage
-    /*stage('build docker image') {
+    stage('build docker image') {
         pythonImage = docker.build("maxsum:build")
     }
-    stage('test') {
+    /*stage('test') {
         pythonImage.inside {
             sh '. /tmp/venv/bin/activate && python -m pytest --junitxml=build/results.xml'
         }

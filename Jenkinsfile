@@ -9,12 +9,12 @@ node {
     stage('build docker image') {
         docker.build("maxsum:build") //pythonImage = docker.build("maxsum:build")
     }
-    /*stage('test') {
+    stage('test') {
         pythonImage.inside {
             sh '. /tmp/venv/bin/activate && python -m pytest --junitxml=build/results.xml'
         }
     }
-    stage('collect test results') {
+    /*stage('collect test results') {
         junit 'build/results.xml'
     }*/
 }

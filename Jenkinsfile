@@ -1,6 +1,7 @@
 node {
     stage('Cleanup') {
         step([$class: 'WsCleanup'])
+	echo sh(returnStdout: true, script:'env')
     }
     stage('Checkout SCM') {
         checkout scm

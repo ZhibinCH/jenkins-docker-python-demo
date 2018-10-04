@@ -12,7 +12,7 @@ node {
     }
     stage('test') {
         pythonImage.inside {
-            python -m pytest --junitxml=build/results.xml' //sh '. /tmp/venv/bin/activate && 
+            sh 'python -m pytest --junitxml=build/results.xml'  
         }
     }
     stage('collect test results') {

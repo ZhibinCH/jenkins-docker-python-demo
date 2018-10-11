@@ -8,7 +8,7 @@ node {
     }
     def pythonImage
     stage('build docker image') {
-        pythonImage = docker.build("maxsum:build")
+        pythonImage = docker.build("maxsum:test")
     }
     /*stage('test') {
         pythonImage.inside {

@@ -19,6 +19,6 @@ node {
         junit 'build/results.xml'
     }*/
     stage('clean up the build image'){
-    	sh 'docker image rm maxsum:build'
+    	sh 'docker image rm maxsum:test'
     }
 }

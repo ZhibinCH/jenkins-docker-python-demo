@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.6-alpen
 
 # Where the project files will be installed and tested inside the container
 WORKDIR /tmp/app
